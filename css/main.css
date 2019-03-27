@@ -90,6 +90,7 @@ form{
     font-size: 84px;
     text-align: center;
     top: 20%;
+    text-shadow: 1px 1px 4px rgb(0, 0, 0);
 }
 input{
     
