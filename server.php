@@ -5,11 +5,9 @@ $username = "";
 $email    = "";
 $errors = array(); 
 // connect to the database
-$config = parse_ini_file("../../config.ini");
+$config = parse_ini_file("../../../../config.ini");
 $db = mysqli_connect($config["dbaddr"], $config["username"], $config["password"], $config["dbname"]);
 
-// Create connection
-$db = new mysqli($servername, $username, $salasana, $dbname);
 // Check connection
 if ($db->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -69,7 +67,7 @@ if (isset($_POST['login_user'])) {
   
     if (count($errors) == 0) {
         $password = md5($password);
-        $query = "SELECT * FROM Users WHERE username='$username' AND password='$password'";
+        $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
         $results = mysqli_query($db, $query);
         if (mysqli_num_rows($results) == 1) {
           $_SESSION['username'] = $username;
