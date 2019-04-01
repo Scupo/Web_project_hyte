@@ -5,10 +5,8 @@ $username = "";
 $email    = "";
 $errors = array(); 
 // connect to the database
-$servername = "mysql.metropolia.fi";
-$username = "petermoi";
-$salasana = "Hansu69";
-$dbname = "petermoi";
+$config = parse_ini_file("../../config.ini");
+$db = mysqli_connect($config["dbaddr"], $config["username"], $config["password"], $config["dbname"]);
 
 // Create connection
 $db = new mysqli($servername, $username, $salasana, $dbname);
@@ -33,7 +31,7 @@ if (isset($_POST['reg_user'])) {
   }
   // first check the database to make sure 
   // a user does not already exist with the same username and/or email
-  $user_check_query = "SELECT * FROM Users WHERE username='$username' OR email='$email' LIMIT 1";
+  $user_check_query = "SELECT * FROM users WHERE username='$username' OR email='$email' LIMIT 1";
   $result = mysqli_query($db, $user_check_query);
   $user = mysqli_fetch_assoc($result);
   
