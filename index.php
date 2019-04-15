@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
+=======
+>>>>>>> 89fee3954bda380e831ecf81cbf081f78fdac9cc
 <?php 
   session_start(); 
 
