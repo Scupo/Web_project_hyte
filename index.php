@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-=======
->>>>>>> 89fee3954bda380e831ecf81cbf081f78fdac9cc
 <?php 
   session_start(); 
 
@@ -74,13 +71,13 @@
 	<thead>
 		<tr>
 			<th><h1>Habitname</h1></th>
-			<th><h1>Monday</h1></th>
-			<th><h1>Tuesday</h1></th>
-               <th><h1>Wednesday</h1></th>
-               <th><h1>Thursday</h1></th>
-               <th><h1>Friday</h1></th>
-               <th><h1>Saturday</h1></th>
-               <th><h1>Sunday</h1></th>
+			<th><h1>Mon</h1></th>
+			<th><h1>Tue</h1></th>
+               <th><h1>Wed</h1></th>
+               <th><h1>Thu</h1></th>
+               <th><h1>Fri</h1></th>
+               <th><h1>Sat</h1></th>
+               <th><h1>Sun</h1></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -146,9 +143,11 @@
                <td></td>
 		</tr>
 	</tbody>
-</table>                
+</table>    
+</div>            
+                 
+                <div class="form-group"> 
                 <h2>Add habits</h2>  
-                <div class="form-group">  
                      <form name="add_habit" id="add_habit" method="post">  
                           <div class="table-responsive">  
                                <table class="table table-bordered" id="dynamic_field">  
@@ -161,7 +160,7 @@
                           </div>  
                      </form>  
                 </div>  
-           </div>   
+             
            
 <!--<div class="habit-success">
         <form method="get" id="HabitSuccess">
