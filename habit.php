@@ -3,32 +3,29 @@
 
 <?php  
  $config = parse_ini_file("../../config.ini");
- $db= mysqli_connect($config["dbaddr"], $config["username"], $config["password"], $config["dbname"]);
+ $db = mysqli_connect($config["dbaddr"], $config["username"], $config["password"], $config["dbname"]);
  $db->set_charset("utf8mb4");
- $number = count($_POST["habitname"]);  
- $username = $_SESSION['username'];
+ $habitname = $_POST['habitname'];  
+ $userid = $_SESSION['userid'];
+ $number = 1;
  
 
  
  // counts the rows and adds the habits to the data base
- if($number > 0)  
+ if($number == 1)  
  {  
       for($i=0; $i<$number; $i++)  
       {  
-           if(trim($_POST["habitname"][$i] != ''))  
+
            {  
-                $sql = "INSERT INTO habits(habitname) VALUES('".mysqli_real_escape_string($db, $_POST["habitname"][$i])."')";  
+                $sql = "INSERT INTO habits (habitname) VALUES ('$habitname')";  
                 mysqli_query($db, $sql);
-                $sql1="INSERT INTO addedhabit (username, habitname)
-                VALUES ('$username', '".mysqli_real_escape_string($db, $_POST["habitname"][$i])."')";
+                $last_id = $db->insert_id;
+                $sql1="INSERT INTO addedhabit (habitid, userid) VALUES ('$last_id', '$userid')";
                 mysqli_query($db, $sql1);
-                  
+                          
            }  
       }  
 
       echo "Data Inserted";  
- }  
- else  
- {  
-      echo "Please Enter Name";  
  }  
