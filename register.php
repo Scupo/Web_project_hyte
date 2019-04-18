@@ -15,11 +15,11 @@ require_once('https.php');
 </head>
 <body>
 
-<div class="container">
-            <div class="bg-image">
-            </div>
-	
-  <form method="post" action="register.php">
+<div class="container3">
+            
+            
+	<div class = "login">
+  <form method="post" action="register.php" class="loginform">
   	<?php include('errors.php'); ?>
   	<div class="input-group">
   	  <label>Username</label>
@@ -43,6 +43,11 @@ require_once('https.php');
   	<p>
   		Already a member? <a href="login.php">Sign in</a>
   	</p>
-  </form>
+	</form>
+	</div>
+	<footer>
+        <p>(C) Metropolia AMK - HYTE</p>
+    </footer>
+</div>
 </body>
 </html>

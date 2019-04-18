@@ -17,12 +17,12 @@ require_once('https.php');
 <body>
 
 	<div class="container">
-            <div class="bg-image">
-            </div>
 
-						<div class="login">
-  <form method="post" action="login.php">
-		<h1>Dailies</h1>
+            
+
+	<div class="login">
+  <form method="post" action="login.php" class="loginform">
+		<h1 id="Dailies-logo">Dailies</h1>
   	<?php include('errors.php'); ?>
 							<fieldset>
                 <h2>Log In</h2>
@@ -30,16 +30,16 @@ require_once('https.php');
                 <p><br> <input type="password" name="password" title="Password should be 8-16 characters long." id="pw" placeholder="**********"/></p>
                 <p><input type="submit" class="btn" name="login_user" value="Log In" id="submit" /></p>
             	</fieldset>
-		<p style="color:whitesmoke;">
-  		Not yet a member? <a href="register.php">Sign up</a>
-  	</p>
+									<p style="color:whitesmoke;">
+									Not yet a member? <a href="register.php">Sign up</a>
+  								</p>
   </form>
 	</div>
-</div>
+  </div>
 	<footer>
         <p>(C) Metropolia AMK - HYTE</p>
     </footer>
 
-
+</div>
 </body>
 </html>
