@@ -1,0 +1,25 @@
+<FilesMatch "\.(htaccess|htpassword|ini|log|sh|inc|bak|git)$">
+Order Allow, Deny
+Deny from All
+</FilesMatch>
+
+<FilesMatch "LICENSE|README.md">
+Order Allow,Deny
+Deny from all
+</FilesMatch>
+
+RedirectMatch 404 /\.git
+
+
+//https.php
+if (empty($_SERVER['HTTPS']) || $_SERVER['HTTPS'] === "off") {
+    $location = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+    header('HTTP/1.1 301 Moved Permanently');
+    header('Location: ' . $location);
+    exit;
+}
+
+JOKAISELLE SIVULLE
+<?php
+require_once('https.php');
+?>
