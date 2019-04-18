@@ -47,6 +47,7 @@
     <?php endif ?>
 </div>
 
+<<<<<<< HEAD
 <div class="container2">  
 <header>
            
@@ -107,6 +108,112 @@
             
 </div>                
 </div>   
+=======
+<!--Background picture
+<div class="bgcontainer">
+            <div class="bg-image">
+            </div>-->
+
+<!-- Dynamic Form for adding habits -->
+<div class="container">  
+                <br />  
+                <br />  
+
+                <table class="habit-container">
+	<thead>
+		<tr>
+			<th><h1>Habitname</h1></th>
+			<th><h1>Mon</h1></th>
+			<th><h1>Tue</h1></th>
+               <th><h1>Wed</h1></th>
+               <th><h1>Thu</h1></th>
+               <th><h1>Fri</h1></th>
+               <th><h1>Sat</h1></th>
+               <th><h1>Sun</h1></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>Eat breakfast</td>
+			<td></td>
+			<td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+		</tr>
+		<tr>
+			<td>Read a book</td>
+			<td></td>
+			<td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+		</tr>
+		<tr>
+			<td>Meditate</td>
+			<td></td>
+			<td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+
+		</tr>
+    <tr>
+			<td>Yoga</td>
+			<td></td>
+			<td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+		</tr>
+    <tr>
+			<td>Gym</td>
+			<td></td>
+			<td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+		</tr>
+    <tr>
+			<td>Good sleep</td>
+			<td></td>
+			<td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+               <td></td>
+		</tr>
+	</tbody>
+</table>    
+</div>            
+                 
+                <div class="form-group"> 
+                <h2>Add habits</h2>  
+                     <form name="add_habit" id="add_habit" method="post">  
+                          <div class="table-responsive">  
+                               <table class="table table-bordered" id="dynamic_field">  
+                                    <tr>  
+                                         <td><input type="text" name="habitname[]" placeholder="Habit" class="form-control name_list" /></td>  
+                                         <td><button type="button" name="add" id="add" class="btn btn-success">Add More</button></td>  
+                                    </tr>  
+                               </table>  
+                               <input type="button" name="submit" id="submit" class="btn btn-info" value="Submit" />  
+                          </div>  
+                     </form>  
+                </div>  
+             
+>>>>>>> c334c51fe574f0605c5474a0064ff07d7cc8b49a
            
 
 </body> 
