@@ -8,7 +8,7 @@ $habitname = "";
 $errors = array();
 
 // connect to the database
-$config = parse_ini_file("../../config.ini");
+$config = parse_ini_file("../../../../config.ini");
 $db = mysqli_connect($config["dbaddr"], $config["username"], $config["password"], $config["dbname"]);
 $db->set_charset("utf8mb4");
 
