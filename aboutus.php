@@ -48,8 +48,38 @@
         </div>
     </div>
         <div class="abtuscont">
-            
+        <h1>About us</h1>
+            <div class="para1">
+            <p>We are a team of four students from Metropolia, each with own talents.
+            We have divided the production of this web app project to segments and everyone of us does some part.
+            Miika focuses on doing nothing useful and mostly trying out stuff.
+            Mikko focuses on documentation and writing presentations.
+            Timo does the hard coding, both front and end. Superior guy.
+            Peter tries stuff out and wastes time like a madlad.
+            <br><br>
+            This web app has been a long project and continues to drive us all insane.
+            Our ultimate goal is to have a working habit table where one can put his or hers habits and track them.
+            Also this will always stay in prototype state. Just because.
+            </p>
+            </div>
+
+            <div class="para2">
+            <p>
+
+            </p>
+            </div>
         </div>
+    </div>
+    <div class="footsies">
+        <footer>
+            <h3>Dailies Prototype - Contact Information</h3>
+            <ul>
+                <li>Miika Honni - miika.honni@metropolia.fi</li>
+                <li>Mikko Iivarinen - mikko.iivarinen@metropolia.fi</li>
+                <li>Timo Harju - timo.harju@metropolia.fi</li>
+                <li>Peter Moilanen - peter.moilanen@metropolia.fi</li>
+            </ul>
+        </footer>
     </div>
 </body>
 </html>

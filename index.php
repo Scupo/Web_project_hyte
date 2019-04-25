@@ -63,6 +63,7 @@
                         <p id="dropdown-welcome"><strong><?php echo $_SESSION['username'];?></strong></p>
                         <a href="#">Progress</a>
                         <a href="#">Achievements</a>
+                        <a href="aboutus.php">About us</a>
                         <a href="index.php?logout='1'">Logout</a>
                     
                 </div>
