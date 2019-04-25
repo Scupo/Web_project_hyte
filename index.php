@@ -54,16 +54,17 @@
 <div class="form-group">  
                 <form name="add_habit" id="add_habit" method="post">  
                     <input type="text" name="habitname" id="habitname" placeholder="Enter your habit" class="form-control name_list">         
-                    <button type="button" onclick="addRow()" name="submithabit" id="submithabit" class="btn btn-info" value="Submit"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path class="fill" d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z"/></g></svg></button>  
+                    <button type="button" onclick="addRow()" onSubmit="return false;" name="submithabit" id="submithabit" class="btn btn-info" value="Submit"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path class="fill" d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z"/></g></svg></button>  
                 </form> 
                 <div class="dropdown">
                 <button onclick="drop()" class="dropbtn">Menu</button>
+                <div class="divider1"><div>
                     <div id="myDropdown" class="dropdown-content">
                         <p id="dropdown-welcome"><strong><?php echo $_SESSION['username'];?></strong></p>
                         <a href="#">Progress</a>
                         <a href="#">Achievements</a>
-                        <a href="aboutus.php">About us</a>
                         <a href="index.php?logout='1'">Logout</a>
+                    
                 </div>
             </div>
             </header>      
@@ -80,30 +81,10 @@
                 <th>Friday</th>
                 <th>Saturday</th>
                 <th>Sunday</th>
-            </tr>
-            
-            <tr>
-
-            </tr>
-            
-            <tr>
-
-            </tr>
-            
-            <tr>
-
-            </tr>
-            
-            <tr>
-
-            </tr>
-            
-            <tr>
-
             
             </table>
-                           
-                     
+</tr>               
+<button type="button">Save</button>
             
 </div>                
 </div>   

@@ -27,5 +27,5 @@
            }  
       }  
 
-      echo "Data Inserted";  
+      
  }  

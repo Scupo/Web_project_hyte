@@ -9,6 +9,9 @@
   border: none;
   cursor: pointer;
   opacity: 0.5;
+  border-radius: 30px;
+  width: 200%;
+
 }
 
 /* Dropdown button on hover & focus */
@@ -21,7 +24,7 @@
 position: absolute;
 right: 0;
 z-index: 1;
-padding-right: 80px;
+padding-right: 120px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -29,11 +32,13 @@ padding-right: 80px;
   display: none;
   position: absolute;
   background-color: #f1f1f1;
-  padding-right: 50px;
+ 
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   opacity: 0.9;
+  border-radius: 30px;
+  text-align: center;
   
 }
 
@@ -46,7 +51,10 @@ padding-right: 80px;
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd}
+.dropdown-content a:hover {
+  
+  border-radius: 30px;
+  background-color: #ddd}
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}

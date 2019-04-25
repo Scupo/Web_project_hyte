@@ -21,7 +21,6 @@
                 data:$('#add_habit').serialize(),  
                 success:function(data)  
                 {  
-                     alert(data);   
                      $('#add_habit')[0].reset();  
                 }  
            });  
