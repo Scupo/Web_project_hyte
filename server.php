@@ -14,11 +14,13 @@ $db->set_charset("utf8mb4");
 
 // REGISTER USER
 if (isset($_POST['reg_user'])) {
+  
   // receive all input values from the form
   $username = mysqli_real_escape_string($db, $_POST['username']);
   $email = mysqli_real_escape_string($db, $_POST['email']);
   $password_1 = mysqli_real_escape_string($db, $_POST['password_1']);
   $password_2 = mysqli_real_escape_string($db, $_POST['password_2']);
+  
   // form validation: ensure that the form is correctly filled ...
   // by adding (array_push()) corresponding error unto $errors array
   if (empty($username)) { array_push($errors, "Username is required"); }
@@ -27,6 +29,7 @@ if (isset($_POST['reg_user'])) {
   if ($password_1 != $password_2) {
 	array_push($errors, "The two passwords do not match");
   }
+  
   // first check the database to make sure 
   // a user does not already exist with the same username and/or email
   $user_check_query = "SELECT * FROM users WHERE username='$username' OR email='$email' LIMIT 1";
@@ -50,25 +53,26 @@ if (isset($_POST['reg_user'])) {
   			  VALUES('$username', '$email', '$password')";
   	mysqli_query($db, $query);
   	$_SESSION['username'] = $username;
-  	$_SESSION['success'] = "You are now logged in";
   	header('location: index.php');
   }
 }
 
-// ... 
 // LOGIN USER
-
 if (isset($_POST['login_user'])) {
     $username = mysqli_real_escape_string($db, $_POST['username']);
     $password = mysqli_real_escape_string($db, $_POST['password']);
   
+    //if the username field is empty a error message is pushed
     if (empty($username)) {
         array_push($errors, "Username is required");
     }
+   
+    //if the password field is empty a error message is pushed
     if (empty($password)) {
         array_push($errors, "Password is required");
     }
-  
+    
+    //if there are 0 errors and the password matches with the user the site allows the user to log in
     if (count($errors) == 0) {
         $password = md5($password);
         $query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
@@ -77,10 +81,13 @@ if (isset($_POST['login_user'])) {
         if (mysqli_num_rows($results) == 1) {
           $_SESSION['username'] = $username;
           $_SESSION['success'] = "You are now logged in";
+         
+          // Defines the user id
           $query1 = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
           $results1 = mysqli_query($db, $query1);
           $row=mysqli_fetch_assoc($results1);
           $_SESSION['userid']= $row['userid'];
+          $userid = $_SESSION['userid'];
 
           header('location: index.php');
           
@@ -90,62 +97,4 @@ if (isset($_POST['login_user'])) {
     }
   }
 
- //Gets the user id
-
-
- 
- 
- /* //Check the users first login
-if (isset($_POST['login_user'])){
-
-      $username = $_SESSION['username'];
-      $getfirstLogin = "SELECT firstLogin FROM users WHERE username = '.$username.'";
-      $firstloginResult = mysqli_query($db, $getfirstLogin);
-      $countrows= mysqli_num_rows($firstLoginresult);
-      if ($countrows= ['firstLogin'] == "0") {
-        $sql2 ="UPDATE users SET firstLogin = '1' WHERE username = '".$username."'"; 
-        header('location: firstlogin.php');
-      }
-      
-      else 
-
-      {
-        header('location: firstlogin.php.php');
-
-      }
-
-
-}
-
-
- /*
-  // REGISTER HABIT
- if (isset($_POST['add_habit'])) {
-    // receive all input values from the form
-    $habitname = mysqli_real_escape_string($db, $_POST['habitname']);
-    // form validation: ensure that the form is correctly filled ...
-    if (empty($habitname)) { array_push($errors, "Habit name is required."); }
-
-    // check if the habit already exists in the database
-    $habit_check_query = "SELECT * FROM habits WHERE habitname='$habitname' LIMIT 1";
-    $result = mysqli_query($db, $habit_check_query);
-    $habit = mysqli_fetch_assoc($result);
-
-    if ($habit) { // if habit exists
-      if ($habit['habitname'] === $habitname) {
-        array_push($errors, "Habit already exists");
-
-      }
-    }
-  // Finally, register habit if there are no errors in the form
-  if (count($errors) == 0) {
-
-  	$query = "INSERT INTO habits (habitname) 
-  			  VALUES('$habitname')";
-    mysqli_query($db, $query);
-    array_push($errors, "Habit successfully added!");
-    $_SESSION['habitname'] = $habitname;
-  } */
- 
-  
 
