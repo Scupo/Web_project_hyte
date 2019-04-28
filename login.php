@@ -1,3 +1,6 @@
+<?php
+require_once('https.php');
+?>
 <?php include('server.php') ?>
 <!DOCTYPE html>
 <html>
@@ -13,12 +16,23 @@
 </head>
 <body>
 
+<<<<<<< HEAD
 	<div class="container"> 
 
 		<div class="login">
   		<form method="post" action="login.php" class="loginform">
 			<h1 id="Dailies-logo">Dailies</h1>
   		<?php include('errors.php'); ?>
+=======
+	<div class="container">
+
+            
+
+	<div class="login">
+  <form method="post" action="login.php" class="loginform">
+		<h1 id="Dailies-logo">Dailies</h1>
+  	<?php include('errors.php'); ?>
+>>>>>>> e9ee61279c5d1bcf58a8ecd184ed17f720b22c89
 							<fieldset>
                 <h2>Log In</h2>
                 <p><br> <input type="text" name="username" title="Username accepts only alphabetical characters. No spaces, numbers or special characters." id="username" placeholder="Username" /></p>
@@ -28,7 +42,11 @@
 									<p style="color:whitesmoke;">
 									Not yet a member? <a href="register.php">Sign up</a>
   								</p>
+<<<<<<< HEAD
   		</form>
+=======
+  </form>
+>>>>>>> e9ee61279c5d1bcf58a8ecd184ed17f720b22c89
 	</div>
   </div>
 	<footer>

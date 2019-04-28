@@ -139,8 +139,13 @@ header button svg .fill {
 input[type="checkbox"] {
 
     
+<<<<<<< HEAD
     height: 50px;
     width: 50px;
+=======
+    height: 30px;
+    width: 30px;
+>>>>>>> e9ee61279c5d1bcf58a8ecd184ed17f720b22c89
    
 }
 
@@ -169,6 +174,7 @@ h1{
     position: absolute;
     
     z-index: 1;
+<<<<<<< HEAD
     
     left: 85%;
     border:none;
@@ -181,6 +187,20 @@ h1{
     opacity: 0.5;
 
     
+=======
+    
+    left: 85%;
+    border:none;
+    display: inline-block;
+    font-size: 150%;
+    padding: 16px;
+    border-radius: 20px;
+    color:white;
+    background-color: #3498db;
+    opacity: 0.5;
+
+    
+>>>>>>> e9ee61279c5d1bcf58a8ecd184ed17f720b22c89
 
 }
 
@@ -358,7 +378,10 @@ footer{
 }
 
 .habit-container {
+<<<<<<< HEAD
 
+=======
+>>>>>>> e9ee61279c5d1bcf58a8ecd184ed17f720b22c89
     overflow: hidden;
     width: 80%;
     
@@ -401,7 +424,11 @@ footer{
 }
 
 .habit-container td:first-child { 
+<<<<<<< HEAD
     background-color: rgba(255, 255, 255, 0.2); color:whitesmoke ; }
+=======
+    background-color: rgba(255, 255, 255, 0.2); color:#0E1119 ; }
+>>>>>>> e9ee61279c5d1bcf58a8ecd184ed17f720b22c89
 
 .habit-container tr:hover {
     background-color: #464A52;
@@ -424,11 +451,50 @@ footer{
     transition-timing-function: line;
 }
 
+/* About Us */
+[class*="para"]{
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+    width: 42%;
+    display: inline-flex;
+    background-color: rgba(207, 209, 200, 0.4);
+}
+.abtuscont h1{
+    font-family: 'Norican', cursive;
+    font-size: 60px;
+    padding: 5px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 600px){
+    [class*="para"]{
+        width: 90%;
+}
+    .abtuscont h1{
+        padding: 5px;
+        margin-left: 10px;
+        font-size: 48px;
+}}
+
 @media (max-width: 800px) {
     .habit-container td:nth-child(8),
     .habit-container th:nth-child(8) { display: none; }
 }
 
+<<<<<<< HEAD
+=======
+.footsies footer{
+    top: 84%;
+    background-color: rgba(88, 99, 153, 0.3);
+    color: #FFE204;
+    width: 100%;
+    height: 16%;
+    left: 0;
+}
+.footsies footer h3{
+    padding-left: 20px;
+}
+>>>>>>> e9ee61279c5d1bcf58a8ecd184ed17f720b22c89
 
 
 
