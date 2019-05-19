@@ -10,13 +10,13 @@
 		<link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Norican" rel="stylesheet"> 
 </head>
-<body>
+<body class = "register">
 
-<div class="container">
-            <div class="bg-image">
-            </div>
-	
-  <form method="post" action="register.php">
+<div class="container3">
+            
+            
+	<div class = "login">
+  <form method="post" action="register.php" class="loginform">
   	<?php include('errors.php'); ?>
   	<div class="input-group">
   	  <label>Username</label>
@@ -40,6 +40,11 @@
   	<p>
   		Already a member? <a href="login.php">Sign in</a>
   	</p>
-  </form>
+	</form>
+	</div>
+	<footer>
+        <p>(C) Metropolia AMK - HYTE</p>
+    </footer>
+</div>
 </body>
 </html>
