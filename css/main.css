@@ -17,6 +17,7 @@ body {
 
 body, input, button {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+<<<<<<< HEAD
 }
 
 
@@ -41,22 +42,15 @@ body.register {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
-}
-
-body.login {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: url(../img/forrest.png) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+=======
     
 }
 
-header {
+body.index.php{
+
+    
+}
+header  {
     /*width: 100%;
     height: 80px;
   
@@ -71,7 +65,225 @@ header {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 */
+    
 }
+
+
+header form input{
+    width: 30%;
+    height: 50px;
+    float: left;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    text-indent: 18px;
+    padding: 0 60px 0 0;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px 25px 25px 5px;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+  
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+}
+
+
+
+header input::-webkit-input-placeholder {
+    color:rgba(255,255,255,0.75);
+}
+
+header input:-moz-input-placeholder {
+    color:rgba(255,255,255,0.75);
+}
+
+header input::-moz-input-placeholder {
+    color:rgba(255,255,255,0.75);
+}
+
+header input:-ms-input-placeholder {
+    color:rgba(255,255,255,0.75);
+}
+
+header .form-group {
+  
+    width: 100%;
+    display:flex;
+    flex-direction:row;
+    padding:10px;
+
+}
+
+header form {
+  
+    width: 70%;
+    display:flex;
+    flex-direction:row;
+    padding:2px;
+
+}
+
+header form button{
+    width: 50px;
+    height: 50px;
+  
+    
+    top:15px;
+    right:15px;
+    z-index:2;
+  
+    border-radius: 30px;
+    background: #fff;
+    border: 0px;
+    box-shadow: none;
+    outline: none;
+    cursor: pointer;
+
+  
+    opacity: 0.5;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+header button svg {
+    width: 20px;
+    height: 20px;
+
+    position: static;
+    top: 5%;
+    left: 50%;
+
+ 
+}
+
+header button svg .fill {
+    fill: #136477;
+  }
+
+
+.form-group {
+
+    padding: 12px;
+
+}
+
+input[type="checkbox"] {
+
+    
+<<<<<<< HEAD
+    height: 50px;
+    width: 50px;
+=======
+    height: 30px;
+    width: 30px;
+>>>>>>> e9ee61279c5d1bcf58a8ecd184ed17f720b22c89
+   
+}
+
+h1{
+       
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px grey;
+    position: relative;
+    
+      
+}
+.habit-table {
+    
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+    padding: 0 0 8em 0;
+    
+    
+}
+
+.habit-table button {
+
+
+   
+    position: absolute;
+    
+    z-index: 1;    
+    left: 85%;
+    border:none;
+    display: inline-block;
+    font-size: 150%;
+    padding: 16px;
+    border-radius: 20px;
+    color:white;
+    background-color: #3498db;
+    opacity: 0.5;
+
+    
+
+    
+    left: 85%;
+    border:none;
+    display: inline-block;
+    font-size: 150%;
+    padding: 16px;
+    border-radius: 20px;
+    color:white;
+    background-color: #3498db;
+    opacity: 0.5;
+
+    
+
+}
+
+.habit-table button:hover {
+    opacity: 1.0;
+
+ 
+}
+
+
+#dropdown-welcome {
+    text-align:center;
+}
+
+
+}
+
+body.login {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url(../img/forrest.png) no-repeat center center fixed;
+    background: url(../img/forrest.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    
+}
+
+header {
+    /*width: 100%;
+    height: 80px;
+  
+    
+    padding: 10px;
+    top: 0;
+    left: 0;
+    z-index: 5;
+=======
+
+    
+>>>>>>> c5414d06aede77b75d58eddfe3d084bb4f86af0d
+  
+    background: #136477;
+    box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+*/
+}
+
 
 header form input {
     width: 30%;
@@ -189,6 +401,43 @@ h1 {
 .habit-table input[type=submit]:hover {
     opacity: 1.0;
 }
+.container2 {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    background: url(../img/calm4.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+   
+    
+    
+  
+}
+
+.container3 {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    
+    background: url(../img/calm3.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}
+
+.divider1 {
+    padding-top: 5px;
+}
+
+
 
 #dropdown-welcome {
     text-align: center;
@@ -292,6 +541,9 @@ tbody {
 input {
     border-radius: 50px;
     border: 1px solid grey;
+
+
+
     font-size: 20px;
 }
 
@@ -305,16 +557,25 @@ input[type=email] {
     font-size: 20px;
 }
 
-input[type=password] {
-    padding: 0px 10px;
-    font-size: 20px;
-}
 
 #submit:hover {
     background-color: bisque;
 }
 
-header form button:hover {
+
+input[type=password]{
+    padding: 0px 10px;
+    font-size: 20px;
+}
+
+#submit:hover{
+    background-color: bisque;
+    
+}
+
+
+header form button:hover{
+
     background-color: #FFF;
     opacity: 1.0;
 }
@@ -324,7 +585,10 @@ header form button:hover {
     height: 30px;
 }
 
-th {
+
+
+th{
+
     text-align: center;
     color: whitesmoke;
 }
@@ -341,14 +605,21 @@ footer {
     font-size: 1em;
     -webkit-box-shadow: 0 2px 2px -2px #0E1119;
     -moz-box-shadow: 0 2px 2px -2px #0E1119;
-    box-shadow: 0 2px 2px -2px #0E1119;
+    box-shadow: 0 2px 2px -2px #0E1119; 
     color: whitesmoke;
     text-align: center;
 }
 
 .habit-container {
+
     overflow: hidden;
     width: 80%;
+
+
+    overflow: hidden;
+    width: 80%;
+    
+
     display: table;
     padding: 0 0 8em 0;
 }
@@ -365,11 +636,22 @@ footer {
     color: whitesmoke;
 }
 
+.habit-container h1{
+       
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px grey;
+    position: relative;
+    color: whitesmoke;
+    
+    
+    
+}
+
 /* Background-color of the odd rows */
 
 .container tr:nth-child(odd) {
     background-color: #323C50;
-    s
+    
 }
 
 /* Background-color of the even rows */
@@ -380,6 +662,7 @@ footer {
 
 .habit-container th {
     background-color: #2C3446;
+
 }
 
 .habit-container td:first-child {
@@ -387,6 +670,15 @@ footer {
     color: whitesmoke;
 }
 
+    
+    
+}
+
+.habit-container td:first-child { 
+
+    background-color: rgba(255, 255, 255, 0.2); color:whitesmoke ; }
+
+   
 .habit-container tr:hover {
     background-color: #464A52;
     -webkit-box-shadow: 0 6px 6px -6px #0E1119;
@@ -406,8 +698,53 @@ footer {
     transition-timing-function: line;
 }
 
+/* About Us */
+[class*="para"]{
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+    width: 42%;
+    display: inline-flex;
+    background-color: rgba(207, 209, 200, 0.4);
+}
+.abtuscont h1{
+    font-family: 'Norican', cursive;
+    font-size: 60px;
+    padding: 5px;
+    margin-left: 10px;
+}
+@media screen and (max-width: 600px){
+    [class*="para"]{
+        width: 90%;
+}
+    .abtuscont h1{
+        padding: 5px;
+        margin-left: 10px;
+        font-size: 48px;
+}}
+
 @media (max-width: 800px) {
+
     .habit-container td:nth-child(8), .habit-container th:nth-child(8) {
         display: none;
     }
 }
+
+    .habit-container td:nth-child(8),
+    .habit-container th:nth-child(8) { display: none; }
+}
+
+
+
+.footsies footer{
+    top: 84%;
+    background-color: rgba(88, 99, 153, 0.3);
+    color: #FFE204;
+    width: 100%;
+    height: 16%;
+    left: 0;
+}
+.footsies footer h3{
+    padding-left: 20px;
+}
+

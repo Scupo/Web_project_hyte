@@ -17,7 +17,10 @@
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
   background-color: #2980B9;
+<<<<<<< HEAD
   border: none;
+=======
+>>>>>>> c5414d06aede77b75d58eddfe3d084bb4f86af0d
 }
 
 /* The container <div> - needed to position the dropdown content */

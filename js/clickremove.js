@@ -1,5 +1,10 @@
+
     //Clicking the add habit button runs this function load. It reads the input and runs the habit.php 
     $(document).ready(function(){  
+
+    //Clicking the add habit button runs this function load. It reads the input and runs the habit.php 
+    $(document).ready(function(){  
+
       $('#submithabit').click(function(){            
            $.ajax({  
                 url:"habit.php", 
@@ -16,3 +21,12 @@
       });  
  });  
 
+// Toggle function to toggle elements 
+$(document).ready(function(){
+	$('#submit').click(function(){
+      $('#HabitSuccess').toggle(500);
+      
+  });
+}); 
+
+    })

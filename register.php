@@ -1,3 +1,6 @@
+<?php
+require_once('https.php');
+?>
 <?php include('server.php') ?>
 <!DOCTYPE html>
 <html>

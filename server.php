@@ -8,7 +8,7 @@ $habitname = "";
 $errors = array();
 
 // connect to the database
-$config = parse_ini_file("../../config.ini");
+$config = parse_ini_file("../../../../config.ini");
 $db = mysqli_connect($config["dbaddr"], $config["username"], $config["password"], $config["dbname"]);
 $db->set_charset("utf8mb4");
 
@@ -53,7 +53,11 @@ if (isset($_POST['reg_user'])) {
   			  VALUES('$username', '$email', '$password')";
   	mysqli_query($db, $query);
   	$_SESSION['username'] = $username;
+<<<<<<< HEAD
   	header('location: login.php');
+=======
+  	header('location: index.php');
+>>>>>>> c5414d06aede77b75d58eddfe3d084bb4f86af0d
   }
 }
 
@@ -83,7 +87,11 @@ if (isset($_POST['login_user'])) {
           $_SESSION['success'] = "You are now logged in";
          
           // Defines the user id
+<<<<<<< HEAD
           $query1 = "SELECT userid FROM users WHERE username = '$username' AND password = '$password'";
+=======
+          $query1 = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
+>>>>>>> c5414d06aede77b75d58eddfe3d084bb4f86af0d
           $results1 = mysqli_query($db, $query1);
           $row=mysqli_fetch_assoc($results1);
           $_SESSION['userid']= $row['userid'];

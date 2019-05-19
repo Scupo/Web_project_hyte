@@ -1,6 +1,6 @@
 function addRow()
             {
-                
+               
                 // get input value for habit
                 var habitname = document.getElementById('habitname').value;                             
                
